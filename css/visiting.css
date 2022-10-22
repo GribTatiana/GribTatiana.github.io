@@ -1,0 +1,352 @@
+	
+.nav 
+{
+	background-color: var(--whitef);
+}
+
+.nav_link ul
+{
+	margin: 0;
+	padding: 8px 32px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.nav_link ul li
+{
+	list-style-type: none;
+	display: inline-flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.nav_link span
+{
+	margin-left: 15px;
+	font-weight: 300;
+  line-height: 26px;
+	color: var(--active_gold);
+	font-size: var(--small-title);
+}
+
+.topic_header
+{
+	background-image: url(/img/visiting/2.jpg);
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	background-position: center center;
+	display: flex;
+	align-items: flex-end;	
+}
+
+.topic_header::before
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.about
+{
+	position: relative;
+}
+
+.about h1
+{
+	color: var(--white);
+	text-shadow: 0px 1px 10px var(--whitef);
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+
+.about h2
+{
+	text-transform: uppercase;
+	color: var(--white);
+  text-shadow: 0px 1px 10px var(--whitef);
+  margin-bottom: 10px;
+	margin-left: 35px;
+}
+
+.louvre_at_home
+{
+	background-color: var(--whitef);
+	padding-top: var(--body-padding);
+}
+
+.content_at_home
+{
+	display: flex;
+	flex: 0px 1 1;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content_at_home img
+{
+	width: 100%;
+}
+
+.text_at_home
+{
+	margin-left: 30px;
+}
+
+.text_at_home h2
+{
+	margin-top: 0;
+	line-height: 31px;
+	color: var(--red);
+}
+
+.text_at_home ul  
+{
+	border-top: solid var(--red);
+	font-weight: 500;
+	font-family: var(--fontForum);
+	font-size: var(--medium_text);
+	line-height: 21px;
+	padding-top: 20px;
+}
+
+.text_at_home li
+{
+	list-style-type: square;
+	margin-bottom: 15px;
+}
+
+.text_at_home li:first-child
+{
+	margin-top: 15px;
+}
+
+.text_at_home a
+{
+	font-family: var(--fontRoboto);
+	font-size: var(--text-size);
+	text-decoration: none;
+  font-weight: 300;
+	letter-spacing: 2px;
+	color: var(--black);
+}
+
+.text_at_home a:hover
+{
+	color: var(--gold);
+}
+
+.text_at_home a:active
+{
+	color: var(--active_gold);
+}
+
+.online_tours
+{
+	background-color: var(--whitef);
+	color: var(--black);
+	padding:  var(--body-padding) 0;
+
+}
+
+.online_tours h1
+{
+	color: var(--gold);
+}
+
+.content_info
+{
+	border-top: solid var(--red);
+	padding-top: var(--body-padding);
+	margin: var(--margin-top) auto;
+}
+
+.content
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+  justify-content: space-between;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 5px -5px rgba(45, 47, 48, 0.6);
+	-moz-box-shadow: 5px 5px 5px -5px rgba(45, 47, 48, 0.6);
+	box-shadow: 5px 5px 5px -5px rgba(45, 47, 48, 0.6);
+	background-color: var(--white);
+}
+
+.content > div
+{
+	width: 50%;
+}
+
+.content img
+{
+	margin-right: 10px;
+	width: 40%;
+}
+
+.content h2
+{
+	padding-bottom: 15px;
+	text-align: left;
+	border-bottom: solid var(--red);
+}
+
+.content p
+{
+	font-weight: 300;
+  line-height: 38px;
+	padding: 0 8px;
+}
+
+.content a
+{
+	text-decoration: none;
+	font-family: var(--fontRoboto);
+	font-weight: 400;
+  line-height: 38px;
+	color: var(--black);
+	align-items: flex-end;
+	padding: 0 15px;
+}
+
+.content a:hover
+{
+	color: var(--gold);
+}
+
+.content a:active
+{
+	color: var(--active_gold);
+}
+
+.content_tour
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.element-animation
+{
+	opacity: 0;
+	transform: scaleZ(0.3);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+	transform: scaleZ(1);
+}
+
+.tickets
+{
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.tickets h1
+{
+	color: var(--white);
+}
+
+.btn2
+{
+	background-color: var(--red);
+}
+
+.buy_tickets img
+{
+	width: 60%;
+}
+
+.parallax
+{
+	background-image: url(/img/visiting/parallax1.jpg);
+}
+
+
+																								/* MEDIA */
+@media (max-width: 1100px) 
+{
+
+	.content_at_home
+	{
+		flex-direction: column
+	}
+
+	.text_at_home
+	{
+		margin-top: var(--margin-top);
+	}
+
+}
+
+@media (max-width: 768px) 
+{
+
+	.content
+	{
+		flex-direction: column;
+		align-items: center
+	}
+
+	.content img 
+	{
+    width: 70%;
+    margin-top: 20px;
+	}	
+
+	.content > div 
+	{
+    width: 70%;
+	}
+
+	.buy_tickets
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	form p,.total, #TOTAL
+	{
+		font-size: 16px;
+	}
+
+	.number span
+	{
+		font-size: 16px;	
+	}
+
+	div[img=jpg]
+	{
+		height: 200px;
+    overflow: hidden;
+	}
+
+	.number p,.total
+	{
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.content > div > p
+	{
+		display: none;
+	}
+
+}

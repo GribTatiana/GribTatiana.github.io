@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/tickets.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>Booking tickets</title>
+</head>
+<body>
+	
+<div class="booking_tickets">
+	<a  href="louvre.html" title=" Return to the home page" target="_blank"><img src="img/tickets/Close.png"></a>
+	<div class="container">
+		<div class="booking">
+			<div class="title">
+				<a  href="#" title="louvre logo">
+					<svg width="85" height="41">
+						<use href="img/sprite_icons.svg#logo2"></use>
+					</svg>
+				</a>
+				<h1>Booking tickets</h1>
+				<p>Tour to Louvre</p>
+			</div>
+			<div class="booking_information">
+				<form method="get" action="">
+				<input class="input_style D-1" type="text" name="date" placeholder="Date"  onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
+				<input class="input_style T-1" type="text" name="time" placeholder="Time" onfocus="(this.type='time')" onblur="if(!this.value)this.type='text'"/><br />
+				<input class="input_style" type="text" name="information" placeholder="Name" /><br />
+				<input class="input_style" type="email" name="information"  placeholder="E-mail"/><br />
+				<input class="input_style" type="tel" name="information" placeholder="Phone"/><br />
+				<select class="input_style E-1" name="information" placeholder="Ticket Type">
+					<option value="Сhoose an exhibition">Ticket Type</option>
+					<option value="Permanent exhibition" >Permanent exhibition</option>
+					<option value="Temporary exhibition" >Temporary exhibition</option>
+					<option value="Combined Admission" >Combined Admission</option>
+				</select>
+				<svg id="date1" width="15" height="15" >
+					<use href="img/sprite_icons.svg#date1"></use>
+				</svg>
+				<svg id="time" width="15" height="15" >
+					<use href="img/sprite_icons.svg#time"></use>
+				</svg>
+				<svg id="name1" width="13" height="15" >
+					<use href="img/sprite_icons.svg#name1"></use>
+				</svg>
+				<svg id="email" width="15" height="11">
+					<use href="img/sprite_icons.svg#email"></use>
+				</svg>
+				<svg id="phone" width="14" height="23">
+					<use href="img/sprite_icons.svg#phone"></use>
+				</svg>
+				<svg id="ticket" width="15" height="15">
+					<use href="img/sprite_icons.svg#ticket"></use>
+				</svg>
+				<div class="number">
+					<div class="small_title">Entry ticket</div>
+					<div class="ticket_type">
+						<div>
+							<p>Basic 18+ (20 €)</p>
+							<p>Senior 65+ (10 €)</p>
+						</div>
+						<div>
+							<div class="input-number input-number1">
+								<button class="style_pm BTN-M" type="button" >-</button>
+								<input class="style_input" id="I1" type="number" min="0" value="0"  readonly >
+								<button class="style_pm BTN-P" type="button" >+</button>
+							</div><br>
+							<div class="input-number">
+								<button class="style_pm BTN-M2" type="button" >-</button>
+								<input class="style_input" id="I2" type="number" min="0" value="0" readonly>
+								<button class="style_pm BTN-P2" type="button" >+</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+				</form>
+			</div>
+		</div>
+		<div class="overwiew">
+			<div class="overwiew_info">
+				<div class="info">
+					<div>
+						<h2>Overview</h2>
+						<h3>Tour to Louvre</h3>
+						<div class="day"></div>
+						<div class="period"></div>
+						<div class="exhibition"></div>
+					</div>
+				</div>
+				<img src="img/tickets/overwiew.jpg" alt="Louvre Pyramid"  title="Louvre Pyramid">
+			</div>
+			<div class="total">
+				<div class="estimation">
+					<div><span id="B1"></span>Basic (20 €)<br>
+						<span id="S1"></span>Senior (10 €)</div> 
+					<div><span id="sum1"></span><br> <span id="sum2"></span></div> 
+				</div>
+				<div class="estimation_total">Total: <span id="TOTAL"></span></div>
+			</div>
+			<div class="card">
+				<div class="front_side">
+					<svg id="visa" width="55" height="16">
+						<use href="/img/sprite_icons.svg#visa" ></use>
+					</svg>
+					<svg id="mastercard" width="53" height="32">
+						<use href="/img/sprite_icons.svg#mastercard"></use>
+					</svg>
+					<form>
+						<label for="number">Card number</label><br>
+						<input id="number" type="number" name="nam" pattern="[0-9]{16}"><br>
+						<label for="date">Expiration date</label><br>
+						<input id="date" type="number" min="1" max="12" value="01" name="nam">
+						<input id="date" type="number" min="2022" max="2047" value="2022" name="year"><br>
+						<label for="name">Cardholder name</label><br>
+						<input id="name" type="text" name="nam">
+					</form>
+				</div>
+				<div class="back_side">
+					<p></p>
+					<form>
+						<label for="CVV">CVC/CVV</label><br>
+						<input id="CVV" type="number" name="nam" pattern="[0-9]{3}" ><br>
+						<div>The last 3 or 4 digits on back of the card</div>
+					</form>
+				</div>
+			</div>
+			<button class="btn" type="button">Book</button>
+		</div>
+	</div>
+</div>
+
+<!-- <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+<script src="/js/tickets.js"></script>	
+</body>
+</html>

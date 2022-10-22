@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>LOUVRE museum</title>
+</head>
+<body>
+	
+	<div id="back_to_top">
+		<svg class="logo_img" width="30" height="26">
+			<use href="img/sprite_icons.svg#arrow"></use>
+		</svg>
+	</div>
+
+	<header id="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="logotip">
+					<a  href="#" title="louvre logo">
+						<svg  width="49" height="26">
+							<use href="img/sprite_icons.svg#logo"></use>
+						</svg>
+					</a>
+					<p>LOUVRE</p>
+			  </div>
+				<div class="menu_bar">
+					<ul class="menu" id="menu">
+						<li><a href="visiting.html"  title="Virtual tour" target="_blank">Visiting</a></li>
+						<li><a href="#explore" class="menu-link" title="Picture explore" >Explore</a></li>
+						<li><a href="#video" class="menu-link" title="Video journey" >Video</a></li>
+						<li><a href="#gallery" class="menu-link" title="Art gallery" >Gallery</a></li>
+						<li><a href="booking_tickets.html"  title="Buy tickets" target="_blank" >Tickets</a></li>
+						<li><a href="contacts.html"  title="Contacts" target="_blank">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="hamb">
+					<div class="hamb_field" id="hamb">
+						<span class="strip"></span>
+						<span class="strip"></span>
+						<span class="strip"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="popup" id="popup">
+		<div class="menu_img" id="section_visible">
+			<img  src="img/m1.jpg" alt="louvre museum" title="louvre museum">
+			<img  src="img/m2.jpg" alt="louvre museum" title="louvre museum">
+			<img  src="img/m3.jpg" alt="louvre museum" title="louvre museum">
+		</div>
+		<hr>
+		<div class="footer_social">
+				<a  href="#" title="Youtube">
+					<svg class="social_img" width="48" height="48">
+						<use href="img/sprite_icons.svg#youtube"></use>
+					</svg>
+				</a>
+				<a  href="#" title="Instagram">
+					<svg class="social_img" width="48" height="48">
+						<use href="img/sprite_icons.svg#instagram"></use>
+					</svg>
+				</a>
+				<a  href="#" title="Facebook">
+					<svg class="social_img" width="48" height="48">
+						<use href="img/sprite_icons.svg#facebook"></use>
+					</svg>
+				</a>
+				<a  href="#" title="Twitter">
+					<svg class="social_img" width="48" height="48">
+						<use href="img/sprite_icons.svg#twitter"></use>
+					</svg>
+				</a>
+				<a  href="#" title="Pinterest">
+					<svg class="social_img" width="48" height="48">
+						<use href="img/sprite_icons.svg#pinterest"></use>
+					</svg>
+				</a>
+		</div>
+	</div>
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro_content">
+				<div class="ave" id="ave">
+					<h1>Welcome<br>to the Louvre</h1>
+					<h5>From the castle to the museum</h5>
+					<a href="booking_tickets.html" class="btn" title="Booking tickets" target="blank">Discover the Louvre</a>
+				</div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/1.jpg" alt="LEONARDO - Portrait of Monna Lisa"  title="LEONARDO - Portrait of Monna Lisa"></div>
+						<div class="swiper-slide"><img src="img/2.jpg" alt="Koninck Solomon - Philosopher with an open book" title="Koninck Solomon - Philosopher with an open book"></div>
+						<div class="swiper-slide"><img src="img/3.jpg" alt="Rembrandt - Bathsheba in the bath reading a letter from King David" title="Rembrandt - Bathsheba in the bath reading a letter from King David"></div>
+						<div class="swiper-slide"><img src="img/4.jpg" alt="Robert Hubert - Interior of the Colosseum" title="Robert Hubert - Interior of the Colosseum"></div>
+						<div class="swiper-slide"><img src="img/5.jpg" alt="Kalf Willem - Still Life" title="Kalf Willem - Still Life"></div>
+					</div>
+					<div class="swiper_bar">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+	<div class="visiting" id="visiting" >
+		<div class="container">
+			<a href="visiting.html"  title="Virtual tour" target="_blank"><h1>Virtual tour</h1></a>
+			<div class="virtual_tour">
+				<div class="tour">
+					<img src="img/v1.jpg" alt="Royal Palace" title="Royal Palace">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!" ><h2>Royal Palace</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>	
+				<div class="tour">
+					<img src="img/v2.jpg" alt="Denon Wing" title="Denon Wing">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!" ><h2>Denon Wing</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>		
+				<div class="tour">
+					<img src="img/v3.jpg" alt="Colonnade Perrault" title="Colonnade Perrault">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!" ><h2>Colonnade Perrault</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>		
+				<div class="tour">
+					<img src="img/v4.jpg" alt="Greek hall">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!" ><h2>Greek hall</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>		
+				<div class="tour">
+					<img src="img/v5.jpg" alt="Mona Lisa">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!" ><h2>Mona Lisa</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>		
+				<div class="tour">
+					<img src="img/v6.jpg" alt="Night Palace">
+					<a href="visiting.html" target="_blank" title="Visit the museum rooms and galeries, admire the palace architecture and enjoy the views!"><h2>Night Palace</h2></a>
+					<div class="tour_info">
+						<span class="info"> 360&deg; Virtual Tour</span><br>
+						<span class="tour_way"> Google Street Panorama View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="explore" id="explore" >
+		<div class="container">
+			<div class="picture_explore">
+				<div class="explore_info">
+					<h1>Picture explore</h1>
+					<div class="explore_text">
+						<p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+						<p>It was cleaned in 1984 to remove a <span>&quot;yellow veil&quot;</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+						<p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+					</div>
+				</div>
+				<div id="image-comparison">
+					<img src="img/p1.jpg" alt="painting Las Meninas before" title="painting Las Meninas before" >
+					<img src="img/p2.jpg" alt="painting Las Meninas after" title="painting Las Meninas after" >
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="video" id="video" >
+		<div class="container">
+			<div class="video_journey">
+				<div class="journey">
+					<div class="journey_title">
+						<h1>Video journey</h1>	
+					</div>					
+					<div class="journey_text">
+						<p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+					</div>
+				</div>
+				<div class="swiper mySwiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><iframe width="1440" height="810" class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/JkPcA8dngB4" title="YouTube video player"  frameborder="0" allow="accelerometer;   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="swiper-slide"><iframe width="1440" height="810" class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  frameborder="0" allow="accelerometer;   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="swiper-slide"><iframe width="1440" height="810" class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  frameborder="0" allow="accelerometer;   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="swiper-slide"><iframe width="1440" height="810" class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="swiper-slide"><iframe width="1440" height="810" class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/aH0v4c5Z4KM" title="YouTube video player"  frameborder="0" allow="accelerometer;   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="swiper_bar">
+						<div class="swiper-pagination"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gallery" id="gallery" >
+		<div class="container">element-animation
+			<h1>Art Gallery</h1>
+			<div class="gallery_img">
+				<div class="img_item1 element-animation animation2"><img src="img/g1.jpg" alt="Hall of Caryatids" title="IN THE HEART OF THE RENAISSANCE PALACE"></div>
+				<div class="img_item2 element-animation animation2"><img src="img/g2.jpg" alt="Daru staircase" title="A STAIRWAY TO VICTORY"></div>
+				<div class="img_item3 element-animation animation2"><img src="img/g3.jpg" alt="Hall of States" title="FROM THE MONA LISA TO THE WEDDING AT CANA"></div>
+				<div class="img_item1 element-animation animation2"><img src="img/g4.jpg" alt="Hall of the Venus de Milo" title="AN IDEAL OF GREEK BEAUTY"></div>
+				<div class="img_item1 element-animation animation2"><img src="img/g5.jpg" alt="The Apartments of Anne of Austria" title="PORTRAITS OF ROMAN EMPERORS IN THE SALONS OF A QUEEN"></div>
+				<div class="img_item4 element-animation animation2"><img src="img/g6.jpg" alt="Clock Pavilion" title="THE HISTORY OF THE LOUVRE IS EXPOSED"></div>
+				<div class="img_item2 element-animation animation2"><img src="img/g7.jpg" alt="Napoleon III apartments" title="THE SPLENDOURS OF THE SECOND EMPIRE"></div>
+				<div class="img_item5 element-animation animation2"><img src="img/g8.jpg" alt="Michelangelo Gallery" title="THREE CENTURIES OF ITALIAN SCULPTURE"></div>
+				<div class="img_item4 element-animation animation2"><img src="img/g9.jpg" alt="Cour Napoleon & Pyramid" title="A PYRAMID AS A SYMBOL"></div>
+				<div class="img_item1 animation2"><img src="img/g10.jpg" alt="Cours Marly and Puget" title="LIGHT ON SCULPTURE"></div>
+				<div class="img_item2 element-animation animation2"><img src="img/g11.jpg" alt="Crypt of the Sphinx" title="THE GUARDIAN OF EGYPTIAN ART"></div>
+				<div class="img_item3 element-animation animation2"><img src="img/g12.jpg" alt="Rotunda Sully" title="DRAWINGS, PRINTS AND PASTELS"></div>
+				<p class="gradient"></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tickets" id="tickets" >
+		<div class="container">
+			<a href="booking_tickets.html"  title="Buy tickets" target="_blank" ><h1>BUY TICKETS</h1></a>
+			<div class="buy_tickets">
+				<div>
+				<img src="img/t.jpg" alt="Batoni Pompeo Girolamo, Venus presents the weapons to Aeneas" title="Batoni Pompeo Girolamo, Venus presents the weapons to Aeneas">
+				</div>
+					<form method="get" action="">
+						<div class="ticket_type"> 
+							<p>Ticket Type</p>
+								<div class="radio"><input  type="radio" name="ticket" checked>Permanent exhibition</div> 
+								<div class="radio"><input  type="radio" name="ticket">Temporary exhibition</div> 
+						 		<div class="radio"><input  type="radio" name="ticket">Combined Admission</div> 
+						</div>
+						<div class="number">
+							<p>Amount</p>
+							<span>Basic 18+</span>
+							<div class="basic">
+								<button class="number-minus BTN-M" type="button" >-</button>
+								<input type="number" id="I1" min="0" value="0" readonly>
+								<button class="number-plus BTN-P" type="button" >+</button>							
+							</div>
+							<span>Senior 65+</span>
+							<div class="senior">
+								<button class="number-minus BTN-M2" type="button" >-</button>
+								<input type="number" min="0" id="I2" value="0" readonly>
+								<button class="number-plus BTN-P2" type="button" >+</button>							
+							</div>
+							<div class="total">Total € <span id="TOTAL"></span>	</div>
+							<a class="btn2" href="booking_tickets.html"  title="Booking tickets" target="blank"">Buy Now</a>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="parallax"></div>	
+
+	<div class="contacts" id="contacts" >
+		<div class="container">
+			<a href="contacts.html"  title="Contacts" target="_blank"><h1>Contacts</h1></a>
+			<div class="contacts_info">
+				<div class="info_museum">
+					<h6>Palais Royal<br> Mus&eacute;e du Louvre</h6>
+					<p>address: 75001 Paris, France</p>
+					<p><a href="tel:+330140205050" title="please contact us if you have any questions">phone: +33(0) 1 40 20 50 50</a></p>
+					<p><a href="mailto:info@louvre.fr" title="please contact us if you have any questions">mail: info@louvre.fr</a></p>
+				</div>
+				<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874102365141!2d2.3354553161583933!3d48.860611079287665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre%20Museum!5e0!3m2!1sen!2spl!4v1665732206553!5m2!1sen!2spl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_info">
+				<div class="logotip">
+					<a  href="#" title="louvre logo">
+						<svg class="logo_img" width="49" height="26">
+							<use href="img/sprite_icons.svg#logo"></use>
+						</svg>
+					</a>
+					<p class="logo_name">LOUVRE</p>
+				</div>
+				<div class="footer_menu">
+					<div class="menu_bar">
+						<ul class="menu" >
+							<li><a href="visiting.html" target="_blank" title="Virtual tour" >Visiting</a></li>
+							<li><a href="#explore" class="menu-link" title="Picture explore" >Explore</a></li>
+							<li><a href="#video" class="menu-link" title="Video journey" >Video</a></li>
+							<li><a href="#gallery" class="menu-link" title="Art gallery" >Gallery</a></li>
+							<li><a href="booking_tickets.html" target="_blank" title="Buy tickets" >Tickets</a></li>
+							<li><a href="contacts.html" target="_blank" title="Contacts" >Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_social">
+					<a  href="#" title="Youtube">
+						<svg class="social_img" width="48" height="48">
+							<use href="img/sprite_icons.svg#youtube"></use>
+						</svg>
+					</a>
+					<a  href="#" title="Instagram">
+						<svg class="social_img" width="48" height="48">
+							<use href="img/sprite_icons.svg#instagram"></use>
+						</svg>
+					</a>
+					<a  href="#" title="Facebook">
+						<svg class="social_img" width="48" height="48">
+							<use href="img/sprite_icons.svg#facebook"></use>
+						</svg>
+					</a>
+					<a  href="#" title="Twitter">
+						<svg class="social_img" width="48" height="48">
+							<use href="img/sprite_icons.svg#twitter"></use>
+						</svg>
+					</a>
+					<a  href="#" title="Pinterest">
+						<svg class="social_img" width="48" height="48">
+							<use href="img/sprite_icons.svg#pinterest"></use>
+						</svg>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+	<div class="bottom_footer">
+		<div class="container">
+			<span>&copy;2022</span>
+			<span>IT-Academy</span>
+			<span>Tatsiana Hryb</span>
+		</div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="/js/main.js"></script>	
+</body>
+</html>
